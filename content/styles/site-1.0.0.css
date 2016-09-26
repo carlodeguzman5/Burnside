@@ -1,7 +1,3 @@
-.header{
-  width:100%;
-}
-
-.header img{
-  width:200px
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
 }

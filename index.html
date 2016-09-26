@@ -4,17 +4,64 @@
     <script type="text/javascript" src="content/scripts/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="content/styles/material.css">
     <link rel="stylesheet" href="content/styles/site-1.0.0.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>
       Burnside Barbers
     </title>
   </head>
-
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <img src="content/images/logo.jpg">
+
+    <div class="layout-waterfall mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Burnside Barbers</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+            <label class="mdl-button mdl-js-button mdl-button--icon"
+                   for="waterfall-exp">
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" name="sample"
+                     id="waterfall-exp">
+            </div>
+          </div>
+        </div>
+        <!-- Bottom row, not visible on scroll -->
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">Products & Services</a>
+            <a class="mdl-navigation__link" href="">Contact Us</a>
+            <a class="mdl-navigation__link" href="">About Us</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Burnside Barbers</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="">Products & Services</a>
+          <a class="mdl-navigation__link" href="">Contact Us</a>
+          <a class="mdl-navigation__link" href="">About Us</a>
+        </nav>
       </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+
+
+
+
+
+
+
+        </div>
+      </main>
     </div>
   </body>
 
