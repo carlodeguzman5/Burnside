@@ -1,3 +1,68 @@
-.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
-  padding-right: 0;
+body{
+	margin:0;
+	background-color: black;
+	height: 2000px; /*For Scrolling Test*/
+}
+
+li{
+	display: inline;
+	padding: 30px
+}
+
+
+.nav { /* Container just in case we want more than just the search input to come along */
+	position: absolute;
+	margin: 0 auto;
+	top: 185px;  	
+	width: 100%;
+	background-color:black;
+}
+
+.nav ul {
+	text-align: center;
+	color: white;
+	width: 80%;
+	padding: 8px;
+	font-size: 15px;
+	-webkit-transition: width 0.2s;
+	transition: width 0.2s;
+	-webkit-appearance: none;
+	margin: 0 auto;
+}
+
+.sticky .nav {
+	
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	top: 0px;
+	padding-top: 16px;
+}
+
+.container{
+	width: 100%;
+	text-align: center;
+}
+
+#logo-container{
+	padding-top: 16px;
+	padding-bottom: 50px;
+}
+
+
+
+#wrap {
+  width: 100%;
+  height: inherit;
+}
+
+
+
+#carousel-container{
+	top: 50px;
+	text-align: center;
+}
+
+.carousel-photos{
+	width: 400px;
 }
