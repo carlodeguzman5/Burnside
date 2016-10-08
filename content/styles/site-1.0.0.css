@@ -13,7 +13,7 @@ li{
 .nav { /* Container just in case we want more than just the search input to come along */
 	position: absolute;
 	margin: 0 auto;
-	top: 185px;  	
+	top: 185px;
 	width: 100%;
 	background-color:black;
 }
@@ -30,8 +30,13 @@ li{
 	margin: 0 auto;
 }
 
+.nav a{
+	text-decoration: none;
+	color: white;
+}
+
 .sticky .nav {
-	
+	z-index: 2;
 	width: 100%;
 	margin: 0 auto;
 	position: fixed;
@@ -42,6 +47,16 @@ li{
 .container{
 	width: 100%;
 	text-align: center;
+}
+
+#carousel-container{
+	width: 50%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+#photo-carousel img{
+	width: 100%;
 }
 
 #logo-container{
@@ -56,13 +71,17 @@ li{
   height: inherit;
 }
 
+.mdl-mega-footer{
+	flex: 1 0 auto;
+}
 
 
+/*
 #carousel-container{
 	top: 50px;
 	text-align: center;
-}
-
+}*/
+/*
 .carousel-photos{
 	width: 400px;
-}
+}*/
