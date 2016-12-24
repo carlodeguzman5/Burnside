@@ -17,7 +17,7 @@
 
 			<div class='nav'>
 				<ul>
-					<li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
 					<li><a href="javascript:void();">Products</a></li>
 					<li><a href="javascript:void();">Services</a></li>
 					<li><a href="gallery.html">Gallery</a></li>
@@ -30,18 +30,41 @@
 				<img alt="logo" src="content/images/logo-banner.jpg" width="500px" />
 			</div>
 
-			<div class="main">
+      <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      
+      <div class="main">
+        <div id="gallery">
+          <a>
+            <figure>
+              <img class="gallery-image" src="content\images\image-2.jpg" alt="">
+            </figure>
+          </a>
 
-				<div id='carousel-container' class='container'>
+          <a>
+            <figure>
+              <img class="gallery-image" src="content\images\image-1.jpg" alt="">
+            </figure>
+          </a>
 
-					<div id='photo-carousel' class='carousel'>
-						<li><img class='carousel-photos' alt="image1" src="content/images/image-1.jpg" /> </li>
-						<li><img class='carousel-photos' alt="image2" src="content/images/image-2.jpg" /> </li>
-						<li><img class='carousel-photos' alt="image3" src="content/images/image-3.jpg" /> </li>
-					</div>
-				</div>
+          <a>
+            <figure>
+              <img class="gallery-image" src="content\images\logo-banner.jpg" alt="">
+            </figure>
+          </a>
 
-			</div>
+          <a>
+            <figure>
+              <img class="gallery-image" src="content\images\logo.jpg" alt="">
+            </figure>
+          </a>
+
+          <!-- other anchors here ... -->
+        </div>
+      </div>
 
 			<footer>
 				<div class="footer-container">

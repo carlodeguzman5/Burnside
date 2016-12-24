@@ -1,7 +1,11 @@
 body{
 	margin:0;
 	background-color: black;
-	height: 2000px; /*For Scrolling Test*/
+
+}
+
+.main{
+	min-height: 610px;
 }
 
 li{
@@ -71,8 +75,125 @@ li{
   height: inherit;
 }
 
-.mdl-mega-footer{
-	flex: 1 0 auto;
+/* Gallery */
+
+#gallery {
+  font-size: 0;
+	margin: 0 auto;
+	width: 60%;
+}
+
+#gallery a {
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+}
+
+#gallery a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  #gallery a {
+    width: calc(25% - 6px);
+  }
+
+  #gallery a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+
+  #gallery a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+#gallery img {
+	border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+	width: 250px;
+}
+
+#gallery img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
 
 
@@ -85,3 +206,32 @@ li{
 .carousel-photos{
 	width: 400px;
 }*/
+
+/* Footer */
+footer{
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #444444;
+	padding: 1rem 0 1rem 0;
+	color: #F3F3F3;
+}
+
+footer span ul{
+	width: inherit;
+	text-align: center;
+}
+footer .footer-container{
+	margin: 0 auto;
+	height: 100px;
+	text-align: center;
+
+}
+footer .footer-col{
+	width:30%;
+	display: inline-block;
+}
+footer span{
+	text-align: center;
+s}
